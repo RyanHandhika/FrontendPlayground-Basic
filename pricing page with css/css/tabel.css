@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+nav{
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline;
+  margin-left: 1rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Content */
+main{
+  padding: 1rem;
+}
+
+/* Tabel */
+main .tabel h1{
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+main .tabel hr{
+  margin-bottom: 1rem;
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+}
+
+main .tabel > table,
+main .tabel > table th,
+main .tabel > table td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 15px;
+}
+
+/* Form */
+main .form{
+  margin-top: 1rem;
+  border: 3px solid coral;
+}
+
+main .form h1{
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+main .form hr{
+  margin-bottom: 1rem;
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+}
+
+main .form > table{
+  padding: 1.5rem;
+  width: 100%;
+  text-align: left;
+  border-radius: 10px;
+}
+
+main .form table th,
+main .form table td{
+  padding: 0px 0px 10px 0px;
+}
+
+main .form form button{
+  padding: 0.5rem 1rem;
+  background-color: chocolate;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  margin: auto;
+}
+
+/* Footer */
+
+footer{
+  padding: 1rem;
+  background-color: burlywood;
+  text-align: center;
+}

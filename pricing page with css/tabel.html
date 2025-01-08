@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front End Basic</title>
+  <link rel="stylesheet" href="css/tabel.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav>
+    <h1>FE &boxv; Basic</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tabel.html">Table</a></li>
+      <li><a href="exercise.html">Exercise</a></li>
+    </ul>
+  </nav>
+
+  <!-- content -->
+  <main>
+  
+    <section class="tabel">
+      <h1>Tabel</h1>
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">NIM</th>
+            <th rowspan="2">KELAS</th>
+            <th colspan="2">NILAI</th>
+          </tr>
+          <tr>
+            <th>UTS</th>
+            <th>UAS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10124311</td>
+            <td>HI-5</td>
+            <td>85</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>10124312</td>
+            <td>DKV-2</td>
+            <td>80</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>10124313</td>
+            <td>SI-3</td>
+            <td>85</td>
+            <td>90</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="form">
+      <h1>Form</h1>
+      <hr>
+      <table>
+        <form action="" method="">
+          <tr>
+            <th>Username</th>
+            <td>: <input type="text" name="username" required></td>
+          </tr>
+          <tr>
+            <th>Password</th>
+            <td>: <input type="text" name="username" required></td>
+          </tr>
+          <tr>
+            <th>Komentar</th>
+            <td>: <textarea name="textarea" id="komentar" rows="10" cols="20" required></textarea></td>
+          </tr>
+          <tr>
+            <th>Gelar</th>
+            <td>: <select name="gelar" id="gelar"><option value="d3">D3</option><option value="s1">S1</option><option value="s2">S2</option></select></td>
+          </tr>
+          <tr>
+            <th>Jenis Kelamin</th>
+            <td>: <input type="radio" name="jk" id="jk" value="pria"> Pria <input type="radio" name="jk" id="jk" value="wanita"> Wanita</td>
+          </tr>
+          <tr>
+            <th>Hobi</th>
+            <td>: <input type="checkbox" name="hobi" id="hobi" value="game"> Game <input type="checkbox" name="hobi" id="hobi" value="sport"> Sport <input type="checkbox" name="hobi" id="hobi" value="study"> Study</td>
+          </tr>
+        </form>
+      </table>
+    </section>
+  
+  </main>
+
+  <!-- footer -->
+  <footer>
+
+    <section>
+      <p>Copyright &copy; MRHS | Software Enginering</p>
+    </section>
+  
+  </footer>
+</body>
+</html>
