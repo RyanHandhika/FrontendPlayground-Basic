@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+nav{
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline;
+  margin-left: 1rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Content */
+main section{
+  width: 70%;
+  height: 80vh  ;
+  background-color: white;
+  margin: 5rem auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+main section article{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+main section article div{
+  margin: 2rem auto;
+}
+
+main section article div img{
+  display: flex;
+  margin: auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+}
+
+main section article div p{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+main section article h1{
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: dodgerblue;
+}
+
+main section article button{
+  padding: 1rem;
+  width: 8rem;
+  text-align: center;
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+  color: dodgerblue;
+  background-color: white;
+  cursor: pointer;
+}
+
+main section article .team button{
+  padding: 1rem;
+  width: 8rem;
+  text-align: center;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+main section article .link{
+  color: dodgerblue;
+}
+
+main section article .link hr{
+  background-color: darkgray;
+  border: none;
+  height: 1px;
+  margin-top: 1rem;
+}
+
+main section article > h1, h3{
+  color: white;
+}
+
+/* Footer */
+
+footer{
+  padding: 1rem;
+  background-color: burlywood;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  main section{
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    height: 100vh;
+  }
+
+  main section article{
+    display: block;
+  }
+
+  main section article .personal, .team{
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  main section article .enterprise{
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  main section article hr{
+    border: none;
+  }
+
+  main section article > h1, h3{
+    color: white;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
