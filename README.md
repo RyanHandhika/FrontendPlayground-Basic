@@ -29,9 +29,7 @@ Setiap folder dalam repository ini berisi:
 
 Contoh studi kasus yang bisa kamu coba:
 - Membangun navigasi bar yang responsif
-- Membuat aplikasi to-do list dengan penyimpanan lokal (local storage)
-- Mendesain landing page dengan animasi
-- Mengambil data dari API dan menampilkannya secara dinamis
+- Membuat halaman pembayaran sederhana
 
 ---
 
