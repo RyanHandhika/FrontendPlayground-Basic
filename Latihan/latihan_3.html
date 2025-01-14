@@ -11,39 +11,79 @@
         font-family: "Jersey 15", serif;
         background-color: blanchedalmond;
       }
-      .container .h1{
+      .h1{
         font-size: 3rem;
-        color: brown;
       }
-      .container .tombol{
-        display: flex;
-        margin: 2rem auto;
+      .completed {
+        text-decoration: line-through;
+        color: gray;
       }
-      .container .tombol:hover{
-        font-size: 1rem;
-        transition: 0.1s;
+
+      .delete-button {
+        margin-left: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .delete-button:hover {
+        background-color: darkred;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-5 h1">Todo List App</h1>
+      <h1 class="text-center mt-5 h1">TODO LIST APP</h1>
       <hr class="border border-danger border-2 opacity-50">
-      <div id="content">
-        <h1 class="text-center">Kegiatan Sehari-hari</h1>
-        <button class="btn btn-primary" id="tambah_kegiatan">Tambah Kegiatan</button>
-        <ul id="list">
+      <input type="text" id="taskInput" placeholder="Masukkan Tugas Baru..." class="w-50">
+      <button class="btn btn-primary" id="addButton">Tambah Tugas</button>
+      <ul id="taskList"></ul>
+    </div>
 
-        </ul>
-      </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-      const tambah_kegiatan = document.getElementById("tambah_kegiatan");
-      const list = document.getElementById("list");
-      tambah_kegiatan.addEventListener("click", () => {
-        const kegiatan = document.createElement('li');
-        kegiatan.textContent = "Tugas Baru";
-        list.append(kegiatan);
+      // 🔥 Todo List App with Add, Complete, and Delete features
+
+      // 🎯 Tangkap elemen input, tombol, dan daftar tugas
+      const taskInput = document.getElementById("taskInput");
+      const addButton = document.getElementById("addButton");
+      const taskList = document.getElementById("taskList");
+
+      // ✅ Event untuk menambahkan tugas baru
+      addButton.addEventListener("click", function () {
+        const taskText = taskInput.value; // Ambil nilai input
+
+        if (taskText !== "") {
+          // 🔧 Buat elemen <li> untuk tugas baru
+          const newTask = document.createElement("li");
+          newTask.textContent = taskText;
+
+          // ✂️ Buat tombol hapus
+          const deleteButton = document.createElement("button");
+          deleteButton.textContent = "Hapus";
+          deleteButton.classList.add("delete-button");
+          newTask.appendChild(deleteButton);
+
+          // 📋 Tambahkan tugas ke daftar
+          taskList.appendChild(newTask);
+
+          // 🔄 Kosongkan input setelah menambahkan tugas
+          taskInput.value = "";
+        }
+      });
+
+      // ✅ Event untuk menandai tugas selesai atau menghapus tugas
+      taskList.addEventListener("click", function (e) {
+        // Jika yang diklik adalah tombol hapus
+        if (e.target.classList.contains("delete-button")) {
+          const taskItem = e.target.parentElement;
+          taskItem.remove(); // 🗑️ Hapus elemen <li> dari DOM
+        } else if (e.target.tagName === "LI") {
+          // Jika yang diklik adalah elemen <li>, tandai sebagai selesai
+          e.target.classList.toggle("completed");
+        }
       });
     </script>
   </body>
