@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+nav {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Content */
+
+main {
+  padding: 1rem;
+}
+
+main .content h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+main .content hr {
+  margin-bottom: 1rem;
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+}
+
+main .content article {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+main .content article:nth-of-type(1n) {
+  background-color: lightgray;
+}
+
+main .content article:nth-of-type(2n) {
+  background-color: lightblue;
+}
+
+/* List */
+
+main .list h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+main .list hr {
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+}
+
+main .list article {
+  margin-bottom: 0.5rem;
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: center;
+}
+
+main .list article div {
+  margin: 0px 1rem;
+  font-size: 1.2rem;
+}
+
+main .list article div ul li {
+  list-style: none;
+}
+
+/* Link */
+
+main .link h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+main .link hr {
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+}
+
+main .link article {
+  margin-bottom: 0.5rem;
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: center;
+}
+
+main .link article div ul li {
+  list-style: none;
+}
+
+main .link article div ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Gambar */
+
+main .gambar h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+main .gambar hr {
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+}
+
+main .gambar article {
+  margin-bottom: 0.5rem;
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  padding: 1rem;
+  background-color: burlywood;
+  text-align: center;
+}

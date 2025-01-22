@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
+body {
+  font-family: "Jersey 15", serif;
+  background-color: blanchedalmond;
+}
+.h1 {
+  font-size: 3rem;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-button {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}

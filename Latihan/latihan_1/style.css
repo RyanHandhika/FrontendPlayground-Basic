@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
+body {
+  font-family: "Jersey 15", serif;
+  background-color: blanchedalmond;
+}
+.container .h1 {
+  font-size: 3rem;
+  color: brown;
+}
+.container .tombol {
+  display: flex;
+  margin: 2rem auto;
+}
+.container .tombol:hover {
+  font-size: 1rem;
+  transition: 0.1s;
+}
